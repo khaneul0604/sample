@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		function open1() {
+			window.open("11-open.html");
+		}
+		function open2() {
+			window.open('11-open.html','mywin',width=300,height=500);
+			//window.open('11-open.html','',width=300,height=500); 중아의 부분에 이름을 넣지 않을 경우
+			//새로운 창이 계속 생성 된다.
+		}
+		function open3() {
+			window.open('09-event.html', 'mywin', width=300, height=500);
+			//같은 이름을 넣었을경우 같은 페이지에서 새로 시작을 하게 된다.
+		}
+	</script>
+</head>
+<body>
+	<a href ="#" onclick="open1(); return false;">새창열기</a>
+	<a href ="#" onclick="open2(); return false;">새창열기2</a>
+	<a href ="#" onclick="open3(); return false;">새창열기3</a>
+</body>
+</html>

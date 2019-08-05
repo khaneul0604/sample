@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+	//함수의 선언
+	function sayHello() {
+		document.write("<h1>안녕하세요.</h1>");
+		document.write("<h2>자바스크립트</h2>");
+	}
+	
+	sayHello();
+	
+	sayHello();
+	
+/* 	function sum(x,y) {
+		var z = x+y;
+		return z;
+	}
+	function printResult(x,y) {
+		var result = sum(x,y);
+		document.write("<h3>"+result+"</h3>");
+	}
+	
+	printResult(55,78);
+	printResult("삼",25);
+	printResult("오","구라") */
+	
+	//숫자만 으로 입력하고 싶은 경우
+	function sum(x,y) {
+		var isStrx = !isNaN(x);
+		var isStry = !isNaN(y);
+		
+		if(!isStrx || !isStry) {
+			return "숫자를 주세요~";
+		}
+		var z = parseInt(x)+parseInt(y);//number을 써도 가능
+		return z;
+	}
+	function printResult(x,y) {
+		var result = sum(x,y);
+		document.write("<h3>"+result+"</h3>");
+	}
+	
+	printResult(20,33);
+	printResult("4",25);
+	printResult("오","구라")
+</script>
+<body>
+
+</body>
+</html>
