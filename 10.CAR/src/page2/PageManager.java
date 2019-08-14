@@ -1,4 +1,4 @@
-package page;
+package page2;
 
 public class PageManager {
 	
@@ -7,6 +7,7 @@ public class PageManager {
 	public PageManager() {
 		
 	}
+
 
 	public PageManager(int requestPage) {
 		this.requestPage = requestPage;

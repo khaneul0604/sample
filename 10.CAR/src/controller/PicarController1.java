@@ -14,8 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import dao.QuestionDAO1;
 import dao.QuestionDAOImpl1;
 import model.Question;
-import page.PageManager;
-import page.PageSQL;
+import page2.PageManager;
+import page2.PageSQL;
 
 @WebServlet(name = "PicarController1", urlPatterns = {"/question_list","/question_insert","/question_req_list","/question_input"})
 public class PicarController1 extends HttpServlet {

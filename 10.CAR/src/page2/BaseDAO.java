@@ -1,4 +1,4 @@
-package page;
+package page2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
